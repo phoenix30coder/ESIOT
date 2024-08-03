@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\com.obj" 
+TO ".\Objects\arith" 
+PRINT(".\Listings\arith.m51")

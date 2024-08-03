@@ -1,0 +1,45 @@
+C51 COMPILER V9.60.7.0   LOGI                                                              08/02/2024 21:51:27 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE LOGI
+OBJECT MODULE PLACED IN .\Objects\logi.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE logi.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\logi
+                    -.lst) TABS(2) OBJECT(.\Objects\logi.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void logi(void) {
+   4   1          unsigned char num1 = 0x55; // 01010101 in binary
+   5   1          unsigned char num2 = 0xAA; // 10101010 in binary
+   6   1          unsigned char and_result, or_result, xor_result, not_result;
+   7   1          
+   8   1          
+   9   1              and_result = num1 & num2;
+  10   1              or_result = num1 | num2;
+  11   1              xor_result = num1 ^ num2;
+  12   1              not_result = ~num1;
+  13   1          
+  14   1          P0 = and_result;
+  15   1          P1 = or_result;
+  16   1          P2 = xor_result;
+  17   1          P3 = not_result;
+  18   1              
+*** ERROR C100 IN LINE 18 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 18 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 18 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 18 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 18 OF logi.c: unprintable character 0xA0 skipped
+  19   1              
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+*** ERROR C100 IN LINE 19 OF logi.c: unprintable character 0xA0 skipped
+  20   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  13 ERROR(S)
